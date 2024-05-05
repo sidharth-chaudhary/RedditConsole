@@ -38,7 +38,8 @@ namespace RedditConsole.ServiceRepository.Tests
             await service.GetSubredditApiAsync();
 
             // Assert
-            // Verify that the logger was called with the expected message
+            // Verify that the logger was called with the expected message.
+            //Test email notification during push
             loggerMock.Verify(x => x.LogInformation("Get API call to Subreddit-worldnews is successful."), Times.Once);
         }
 
